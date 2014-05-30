@@ -1,0 +1,31 @@
+﻿@model EmployeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+         <br />
+            <center><span><font color="white"face="Arial" size="10">Empresa BIMBO</font></span></center>
+            <center><span><font color="black" face="Arial" size="3">Empeados de Nomina</font></span></center>
+           <br />
+        @using (Html.BeginForm())
+        {
+             @Html.ValidationSummary()
+            <span>Ingresa el codigo del Empleado</span>
+            <p>@Html.TextBoxFor(m => m.Id)</p>
+            <input type="submit" value="Buscar Empleado" />
+        }
+    </div>
+   
+</body>
+</html>

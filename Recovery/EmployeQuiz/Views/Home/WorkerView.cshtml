@@ -1,0 +1,64 @@
+﻿@model EmployeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <title>WorkerView</title>
+</head>
+<body >
+    
+    <div>
+         <br />
+            <center><span><font color="white"face="Arial" size="10">"Empresa BIMBO"</font></span></center>
+            <center><span><font color="black" face="Arial" size="3">Empeados de la Compañia es:</font></span></center>
+           
+           <br />
+        @{
+            try{
+                
+                <center>
+        <img src ="@Url.Content(Model.PhotoPath)" 
+            alt="Sample image "
+            width="400" height="500" />
+        <p>
+            <b>ID:</b> @Model.Id
+        </p>
+        <p>
+            <b>Posicion</b> @Model.Position
+        </p>
+        <p>
+            <b>Nombre:</b> @Model.Name
+        </p>
+        <p>
+            <b>Apellidos:</b> @Model.FirstLastname @Model.SecondLastname
+        </p>
+        <p>
+            <b>Salario:</b> @Model.Wage
+        </p>
+        <p>
+            <b>Sexo:</b> @Model.Sex
+       </p>
+       
+        </center> 
+           
+            }
+            catch(Exception){
+        @:<b id="Error"> No se puede encontrar el empleado</b>
+    }
+        }
+        </div>
+    <br />
+    <center>
+        <h4>@Html.ActionLink("REGRESO A LA PAGINA","Index" )</h4>
+        <br />
+    </center>
+       
+</body>
+</html>

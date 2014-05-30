@@ -1,0 +1,50 @@
+﻿
+body {
+    color:black;
+    background-image:url(luna1.jpg);
+    text-align:center;
+    font-size:0.28in;
+    
+}
+
+
+
+#posicion {
+    background:url("bimbo7.jpg");
+    background-color: white;
+    border:10px solid black;
+    text-align:center;
+    padding: 20px;
+    margin: 360px;
+}
+#init {
+    border: 2px;
+color:white;
+font-style:normal;
+font-family:'Comic Sans MS';
+}
+#imagen {
+width:auto;
+float:none;
+text-align:center;
+margin-top:auto;
+}
+
+
+.field-validation-error {
+color: magenta;
+}
+.field-validation-valid {
+    display:none;
+}
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: aquamarine;
+}
+.validation-summary-errors {
+    font-weight: bold;
+    color: blue;
+}
+.valitation-summary-valid {
+    display: none;
+}
