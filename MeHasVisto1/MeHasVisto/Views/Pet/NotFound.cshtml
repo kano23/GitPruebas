@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "NotFound";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+              SECCION DE MASCOTAS AVENTURERAS.
+                <p>
+                <a href="http://localhost:49165/Pet/NotFound" title="Imagen NotFound">Perro.cshtml</a>.
+            </p>
+        </div>
+    </section>
+}
+<h2>La informacion que busca no pudo ser encontrada</h2>
+           <h2>Detalles</h2>
+<ul>
+    <li><b>Codigo de Error:</b>@ViewBag.ErrorCode</li>
+    <li><b>Descripcion:</b>@ViewBag.Description</li>
+
+    <li><img alt="" src="~/Images/perr9.jpg" width="600" height="300" /><p><b>@ViewBag.Imgname</b></p></li>
+    <p><input type="button" value="Volver" onclick="window.location.href = 'http://localhost:49165/'" /></p>
+    
+</ul>
